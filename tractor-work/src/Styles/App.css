@@ -1,0 +1,277 @@
+.body {
+  background-color: #282c34;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.mast {
+  height: 65vmin;
+  background-color: rgb(146, 145, 145);
+  color: black;
+  padding: calc(1rem, 0.5rem);
+
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url("../images/wallpaperTractor2.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mainSection
+{
+  height: fit-content;
+}
+
+.searchData{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchResult+.searchResult{
+  margin-left: 3vmin;
+}
+
+.searchResult
+{
+  margin: 3vmin 0;
+}
+
+.search {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  /* margin-top: 20%;  */
+  width: 60vmin;
+  height: 10vmin;
+  height: fit-content;
+}
+
+/*########################TODO ##############################
+Search bar responsive view
+########################/TODO ##############################*/
+
+.middle {
+  grid-row: 2/2;
+  display: flex;
+  /* background-color: red; */
+  flex-direction: column;
+  width: 100%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  font-size: 1.2rem;
+}
+
+.links:hover {
+  text-shadow: -3px -1px 14px rgba(80, 150, 150, 1);
+}
+
+.links + .links {
+  margin-left: 2rem;
+}
+
+.logo {
+  font-size: 2vmin;
+  color: inherit;
+}
+
+.logo:hover {
+  color: inherit;
+  text-decoration: none;
+  text-shadow: -3px -1px 14px rgba(80, 150, 150, 1);
+}
+
+.typo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10vmin;
+  color: whitesmoke;
+  letter-spacing: 2vmin;
+}
+
+.typo > p {
+  background-color: rgba(48, 47, 47, 0.7);
+  padding: 0 0.2vmin 0 1vmin;
+}
+
+.allProds {
+  display: grid;
+  grid-template-rows: 15% 85%;
+  margin-top: 0.5vmin;
+  /* padding-top: 5vmin; */
+  height: 60vh;
+  width: 95%;
+  background-color: rgba(255, 253, 253, 0.795);
+}
+
+.prodTitleContainer {
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vmin;
+  /* margin-bottom: 1vmin; */
+  /* background-color: red; */
+}
+
+.secTitle {
+  /* grid-row: 1/2; */
+  width: 25vmin;
+  padding: 1vmin 5vmin;
+  font-size: 2.5vmin;
+  color: black;
+  border: solid 0.2rem black;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  cursor: pointer;
+}
+
+
+.secTitle:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.prodBody
+{
+  grid-row: 2/2; 
+  margin-top: 5vmin;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.prodCard+.prodCard 
+{
+  margin-left: 1vmin;
+}
+
+.allBrands {
+  display: grid;
+  grid-template-rows: 15% 85%;
+
+  margin-top: 0.5vmin;
+  padding: 5vmin 0;
+  height: fit-content;
+  width: 95%;
+  background-color: rgba(53, 53, 53, 0.795);
+}
+
+.brandTitleContainer {
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secTitleBrands {
+  padding: 1vmin 5vmin;
+  width: auto;
+  font-size: 2.5vmin;
+  color: rgb(201, 201, 201);
+  border: solid 0.2rem rgb(201, 201, 201);
+  box-shadow: rgba(145, 144, 144, 0.56) 0px 22px 70px 4px;
+  cursor: pointer;
+  margin-right: 5vmin;
+  width: 25vmin;
+  text-align: center;
+}
+
+.secTitleBrands:hover {
+  box-shadow: rgb(91, 134, 180) 0px 20px 30px -10px;
+}
+
+.brandsCardSection {
+  grid-row: 2/2;
+  margin-top: 5vmin;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.backButton {
+  /* background-color: red; */
+
+  margin: 1rem 0 0 1rem;
+}
+
+.backButton > .button {
+  position: fixed;
+}
+
+.media {
+  border: 1px solid white;
+  font-size: 2vmin;
+  width: 30vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url("../images/wallpaperTractor2.jpg");
+  border-radius: 0.5rem;
+}
+
+.media-content {
+  margin: 0.5rem;
+}
+
+figure > img {
+  width: 29vmin;
+  height: auto;
+  margin: 0.5vmin;
+}
+
+.AddToCart {
+  width: 30vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  /* margin-left: -0.5rem; */
+}
+
+.AddToCart > .button {
+  width: 27vmin;
+  font-size: 2vmin;
+}
+
+.ListGroup {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1vmin;
+  /* background-color: red; */
+}
+
+.card + .card {
+  margin-left: 1vmin;
+}
+
+.card {
+  margin-top: 1vmin;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+

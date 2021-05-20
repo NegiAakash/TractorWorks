@@ -1,0 +1,57 @@
+Admins :
+
+add new admin (post)
+https://localhost:3000/admin/add
+
+get all admins (get)
+https://localhost:3000/admin/all
+
+login (get)
+https://localhost:3000/admin/:email/:pwd
+
+update email (put)
+https://localhost:3000/admin/update/:email/pwd/:pwd/newEmail/:newEmail
+
+update password (put)
+https://localhost:3000/admin/update/:email/pwd/:pwd/newPwd/:newPwd
+
+
+Brand :
+
+get all brands (get)
+https://localhost:3000/brand/all
+
+create a new brand (post)
+https://localhost:3000/brand/add
+
+get brand by id (get)
+https://localhost:3000/brand/:id
+
+update brand (post)
+https://localhost:3000/brand/update/:name
+
+** complete brand object will be displayed to user and changes will be made
+** e.g. - if no changes are made to contacts, contacts willbe returned as it is
+
+delete a brand (delete)
+https://localhost:3000/brand/remove/:id
+
+
+Tractor :
+
+add new tractor (post)
+https://localhost:3000/tractor/add
+
+get all tractors (get)
+https://localhost:3000/tractor/all
+
+get tractor by id (get)
+https://localhost:3000/tractor/:id
+
+update tractor name (put) 
+https://localhost:3000/tractor/update/:id/name/:name
+
+update tractor brand (put)
+https://localhost:3000/tractor/update/:id/brandId/:brandId
+
+delete tractor (needs to be created)

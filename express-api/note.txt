@@ -1,0 +1,8 @@
+- validation for adminModel.js to accept email in only proper email format
+- option to deactivate admin
+- apply starting and ending characters for all regex matches
+- use output of built in mongoose functions for minimizing code
+- update all endpoints
+- standardize the script
+- encrypt password
+- error formatting
